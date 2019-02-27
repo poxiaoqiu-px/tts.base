@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Abp.AspNetCore" Version="4.0.2" />
+    <PackageReference Include="Abp.EntityFrameworkCore" Version="4.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\tts.business.aplication\tts.business.application.csproj" />
+    <ProjectReference Include="..\tts.business.entityframework\tts.business.entityframework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
